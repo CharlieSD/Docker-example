@@ -3,6 +3,6 @@
         "express": "*"
     },
     "scripts": {
-        "start": "node insdex.js"
+        "start": "node index.js"
     }
 }
