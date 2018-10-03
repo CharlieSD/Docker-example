@@ -1,0 +1,9 @@
+docker build .
+docker build -t charliesd/redis:latest .
+docker run charliesd/redis
+
+#Manual images generator
+docker run -it alpine sh
+docker commit -c 'CMD ["redis-server"]' [ID]
+docker run [newID]
+
