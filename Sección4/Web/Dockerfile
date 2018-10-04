@@ -5,11 +5,12 @@ FROM node:alpine
 WORKDIR /usr/app
 
 # Install some dependecies
-COPY ./ ./
+COPY ./package.json ./
 RUN npm install
+COPY ./ ./
 
 # Default command
 CMD ["npm", "start"]
 
 # Comando para habilitar puertos
-# ducker run -p 8080:8080 charliesd/simpleweb
+# docker run -p 8080:8080 charliesd/simpleweb
